@@ -4,6 +4,8 @@ import React from "react";
 import { StaticRouter } from "react-router-dom";
 import { renderToString } from "react-dom/server";
 import { Provider as ReduxProvider } from "react-redux";
+import Helmet from "react-helmet";
+
 import createStore from "../../client/store/store";
 import { initializeSession } from "../../client/actions/initializeSession";
 
@@ -31,9 +33,10 @@ module.exports = (app, mountPoint) => {
 
     const reduxState = store.getState();
     const reactDom = renderToString(jsx, reduxState);
+    const helmetData = Helmet.renderStatic();
 
     res.writeHead(200, { "Content-Type": "text/html" });
-    res.end(htmlTemplate(reactDom, reduxState));
+    res.end(htmlTemplate(reactDom, reduxState, helmetData));
   });
 
   // Use the router

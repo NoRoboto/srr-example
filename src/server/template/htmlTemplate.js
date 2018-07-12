@@ -1,8 +1,10 @@
-export const htmlTemplate = (reactDom, reduxState) =>
+export const htmlTemplate = (reactDom, reduxState, helmetData) =>
   (`<!DOCTYPE html>
   <html>
     <head>
         <meta charset="utf-8">
+        ${ helmetData.title.toString() }
+        ${ helmetData.meta.toString() }
         <title>React SSR</title>
     </head>
     <body>
