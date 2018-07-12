@@ -1,0 +1,20 @@
+.eslintrc:
+  "_comments": {
+    "browser": "browser global variables.",
+    "jest": "Jest global variables."
+  }
+
+.babelrc
+  "_comments": {
+    "useBuiltIns": "Add individual polyfills in every file based on usage"
+  }
+
+webpack.config.js
+  devtool: dev ? "none" : "source-map"
+  "
+  When your source code has gone through transformations, 
+  debugging becomes a problem. When debugging in a browser, 
+  how to tell where the original code is? Source maps solve 
+  this problem by providing a mapping between the original 
+  and the transformed source code. 
+  "

@@ -1,0 +1,22 @@
+{
+  "extends": "fortech-react",
+  "env": {
+      "browser": true,
+      "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+        "jsx": true
+    }
+  },
+  "rules": {
+    "indent": [2, 2],
+    "space-in-parens": ["error", "never"],
+    "array-bracket-spacing": ["error", "never"],
+    "react/jsx-indent": [2, 2],
+    "no-console": "off",
+    "dot-notation": "off",
+    "no-restricted-syntax": "off"
+  }
+}
