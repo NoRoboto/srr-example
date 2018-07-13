@@ -15,7 +15,7 @@ A lightweight Boilerplate Server Side Render example with nodejs, react, webpack
 
 ## Introduction
 
-This project follows this excellent [tutorial](https://medium.freecodecamp.org/demystifying-reacts-server-side-render-de335d408fe4)  . Feel free to take a look.
+This project follows this excellent [tutorial](https://medium.freecodecamp.org/demystifying-reacts-server-side-render-de335d408fe4) (and modify some things like redux).Feel free to take a look.
 
 ## Requirements
 
